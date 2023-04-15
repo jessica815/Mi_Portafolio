@@ -1,5 +1,5 @@
 ### Mi_Portafolio📝
-Portafolio creado con HTML, CSS, JavaScript, BootStrap y PHP.
+ToDoList creada con HTML, CSS, JavaScript, BootStrap y PHP.
 
 ## Autor
 **Jessica Medina Carrillo**
