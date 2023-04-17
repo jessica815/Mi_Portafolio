@@ -1,0 +1,39 @@
+
+<meta charset="UTF-8">
+<!-- Juego Secreto con input y buttom recolectando los valores desde JS -->
+
+<h1>Juego Secreto con input y buttom recolectando los valores desde JS</h1>
+<br>
+
+<input>
+<button>Verificar si acertó</button>
+
+<script>
+    var numSecreto = 6;
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verificar(){
+
+        if (parseInt(input.value) === numSecreto){
+            alert("Acertaste!");
+        } else {
+            alert("Fallaste!");
+        }
+
+        input.value = "";
+        input.focus();
+
+    }
+
+    var boton = document.querySelector("button");
+    boton.onclick = verificar;
+
+
+</script>
+
+
+
+
+
+

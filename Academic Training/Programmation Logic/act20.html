@@ -1,0 +1,47 @@
+
+<meta charset="UTF-8">
+<!-- Juego Secreto con input y buttom recolectando los valores desde JS 
+    insertando valores a un ARRAY-->
+
+<h1>Juego Secreto con input y buttom recolectando los valores desde JS, insertando valores a un ARRAY</h1>
+<br>
+
+<input>
+<button>Verificar si acertó</button>
+
+<script>
+    var arraySecreto = [4,5,6,9];
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verificar(){
+        var encontrado = false;
+
+        for (var pos = 0; pos < arraySecreto.length; pos++){
+            if (parseInt(input.value) === arraySecreto[pos]){
+                alert("Acertaste!");
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (encontrado == false){
+            alert("Fallaste!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+    var boton = document.querySelector("button");
+    boton.onclick = verificar;
+
+
+</script>
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+<!-- Juego Secreto con input y buttom recolectando los valores desde JS 
+    insertando valores a un ARRAY con el método .push() y ciclos anidados 
+    para evitar repetición de número dentro del array-->
+
+<h1>Juego Secreto </h1>
+<br>
+
+<input/>
+<button>Verificar si Adivino</button>
+
+<script>
+	function aleatorio() {
+		return Math.round(Math.random()*10);
+	}
+
+	function sortearNumeros(cantidad) {
+		var arraysecretos = [];
+		var contador = 1;
+		
+		while(contador<=cantidad){
+			var numeroAleatorio = aleatorio();
+			console.log(numeroAleatorio)
+			var encontrado = false;
+			
+			if (numeroAleatorio != 0){
+				for (var posicion = 0; posicion < arraysecretos.length; posicion++) {
+					if (numeroAleatorio == arraysecretos[posicion]) {
+						encontrado = true;
+						break;
+					}
+				}
+
+				if (encontrado == false) {
+					arraysecretos.push(numeroAleatorio);
+					contador++;
+				}
+			}
+		}	
+		return arraysecretos
+	}
+
+	var secretos = sortearNumeros(4);
+	console.log(secretos)
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verificar() {
+		var encontrado = false;
+
+		for(var posicion = 0; posicion < secretos.length; posicion++){
+			
+			if (parseInt(input.value) == secretos[posicion]) {
+				alert("Acertaste!");
+				encontrado = true;
+				break; 
+			}
+		}
+
+		if (encontrado == false) {
+			alert("Fallaste!");
+		}	
+		input.value = "";
+		input.focus();
+	} 
+
+	var button = document.querySelector("button");
+	button.onclick = verificar;
+
+</script>

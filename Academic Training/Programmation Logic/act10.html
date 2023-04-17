@@ -1,0 +1,29 @@
+
+<!-- Cálcular los puntos de un Equipo de Futbol -->
+
+<meta charset="UTF-8">
+
+<h1> Cálculo de puntos de un Equipo de Futbol</h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+        
+    }
+    
+    var victorias = parseInt(prompt("Introduce el número de partidos GANADOS "));
+    var empates = parseInt(prompt("Introduce el número de partidos EMPATADOS "));
+
+    var puntosTotales = (victorias * 3) + empates;
+
+    imprimir("El equipo ha obtenido " + puntosTotales + " puntos");
+
+</script>

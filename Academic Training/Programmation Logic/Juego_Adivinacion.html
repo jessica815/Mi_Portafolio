@@ -1,0 +1,45 @@
+
+<!-- Adivinar número con condiciones -->
+
+<meta charset="UTF-8">
+
+<h1> Juego Adivina el Número Secreto con funciones </h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+        
+    }
+
+    function sorteo(num){
+
+        return Math.round(Math.random() * num);
+        
+
+    }
+    
+    var numeroSecreto = sorteo(10);
+    var numeroIngresado = parseInt(prompt("Adivina el número secreto (del 0 al 10)"));
+
+    if (numeroIngresado == numeroSecreto){
+
+        imprimir("Adivinaste el número secreto");
+
+    } else {
+
+        imprimir("Te equivocaste, el número secreto es: " + numeroSecreto);
+    
+    }
+
+
+
+</script>
+    

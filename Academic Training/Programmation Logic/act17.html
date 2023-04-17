@@ -1,0 +1,51 @@
+
+<!-- Mejorando el Juego de Adivina el Número Secreto -->
+
+<meta charset="UTF-8">
+
+<h1> Mejorando el Juego de Adivina el Número Secreto a </h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+        
+    }
+    
+    var numSecreto = Math.round(Math.random()*10);
+    var intento = 3;
+    var contador = 1;
+
+    while (contador <= intento){
+
+        var numUsuario = parseInt(prompt("Introduce un número del 1 al 10"));
+
+        if (numSecreto == numUsuario){
+            alert("¡¡¡Has acertado!!!, en el inteto " + contador + " el número secreto era " + numSecreto);
+            break;
+        }else{
+            alert("¡¡¡Has FALLADO!!!");
+        }
+
+        contador++;
+
+    }
+
+    if (numSecreto == numUsuario){
+        imprimir("¡¡¡Has acertado!!!, en el inteto " + contador + " el número secreto era " + numSecreto);
+    }else{
+        imprimir("¡¡¡Has FALLADO!!!, el número secreto era " + numSecreto);
+    }
+
+
+
+
+</script>
+    

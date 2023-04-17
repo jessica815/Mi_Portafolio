@@ -1,0 +1,41 @@
+
+<!-- Tabla de Multiplicar con ciclos For y While -->
+
+<meta charset="UTF-8">
+
+<h1> Tabla de Multiplicar con ciclos For y While</h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+        
+    }
+    
+    var numultiplicado = 1;
+
+    imprimir("WHILE");
+    
+    while (numultiplicado <= 10){
+
+        imprimir(5 * numultiplicado);
+        numultiplicado++;
+
+    }
+
+    imprimir("FOR");
+    for (numultiplicado = 1; numultiplicado <= 10; numultiplicado++){
+
+        imprimir(5 * numultiplicado);
+
+    }
+
+</script>
+    

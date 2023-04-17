@@ -1,0 +1,58 @@
+
+<!-- Cálculo IMC mas compacto y con PROMPT 
+    (interacción con el usuario) y CONDICIONALES-->
+
+<meta charset="UTF-8">
+
+<h1> Cálculo IMC con PROMPT</h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+        
+    }
+    
+    function calcularIMC(peso, altura, nombre){
+        
+        return (peso / (altura * altura));
+    
+    }
+
+    nombre = prompt("Introduce tú NOMBRE: ");
+    peso  = prompt(nombre + " Introduce tú PESO: ");
+    altura = prompt(nombre + " Introduce tú ALTURA: ");
+
+    IMC = calcularIMC(peso, altura);
+
+    imprimir(nombre + " tu IMC es: " + IMC);
+
+    if (IMC < 18.5){
+        imprimir("Tú IMC está BAJO");
+    }
+
+    if (IMC >= 18.5){
+        if (IMC < 25){
+            imprimir("Tú IMC está dentro de lo NORMAL");
+        }
+    }
+
+    if (IMC >= 25){
+        if (IMC < 30){
+            imprimir("Tú IMC está considerado como SOBREPESO");
+        }
+    }
+
+    if (IMC >= 30){
+        imprimir("Tú IMC está considerado como OBESIDAD");
+    }
+
+
+</script>
