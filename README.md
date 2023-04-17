@@ -1,14 +1,14 @@
-### Mi_Portafolio📝
-Portafolio creado con HTML, CSS, JavaScript, BootStrap y PHP.
+### My_Portfolio📝
+Portfolio in which I use languages such as HTML, CSS, JavaScript, BootStrap, PHP and Python.
 
 ## Autor
 **Jessica Medina Carrillo**
 
 * [LinkedIn](https://www.www.linkedin.com/in/jessica-medina-carrillo)
 
-## Portafolio
+## Portfolio
 - [https://github.com/jessica815/Mi_Portafolio/](https://github.com/jessica815/Mi_Portafolio/)
 
-## Contacto
-Correo: jssmedina09@gmail.com
+## Contact
+Email Address: jssmedina09@gmail.com
 
