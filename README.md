@@ -10,5 +10,5 @@ Portafolio creado con HTML, CSS, JavaScript, BootStrap y PHP.
 - [https://github.com/jessica815/Mi_Portafolio/](https://github.com/jessica815/Mi_Portafolio/)
 
 ## Contacto
-jssmedina09@gmail.com
+Correo: jssmedina09@gmail.com
 
