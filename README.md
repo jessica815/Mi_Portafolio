@@ -7,7 +7,6 @@ Portafolio creado con HTML, CSS, JavaScript, BootStrap y PHP.
 * [LinkedIn](https://www.www.linkedin.com/in/jessica-medina-carrillo)
 
 ## Portafolio
-- [https://jessica815.github.io/Mi_Portafolio/](https://jessica815.github.io/Mi_Portafolio/)
 - [https://github.com/jessica815/Mi_Portafolio/](https://github.com/jessica815/Mi_Portafolio/)
 
 ## Contacto
