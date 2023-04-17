@@ -7,7 +7,7 @@ Portfolio in which I use languages such as HTML, CSS, JavaScript, BootStrap, PHP
 * [LinkedIn](https://www.www.linkedin.com/in/jessica-medina-carrillo)
 
 ## Portfolio
-- [https://github.com/jessica815/Mi_Portafolio/](https://github.com/jessica815/Mi_Portafolio/)
+- [https://github.com/jessica815/My_Portfolio/](https://github.com/jessica815/My_Portfolio/)
 
 ## Contact
 Email Address: jssmedina09@gmail.com
