@@ -1,0 +1,62 @@
+/*  
+    - "#" se utiliza para seleccionar elementos HTML por su atributo de id.
+    - "." se utiliza para seleccionar elementos HTML por su atributo de class.
+    - La omisión de cualquier carácter de selector antes de la llave de apertura se utiliza para seleccionar un tipo de elemento HTML específico.
+*/
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{
+    width: 940px;
+    height: 350px;
+}
+
+.principal{
+    background: #ccc;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+.p {
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 22px;
+}
+
+.diferenciales{
+    background: #fff;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top; /* Colocar el texto arriba de una imagen grande por ejemplo  */
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 30%;
+}
+
+
+
+
+

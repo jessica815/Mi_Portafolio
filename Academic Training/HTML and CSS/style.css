@@ -1,0 +1,279 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #bbb; 
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*Quita el subrayado que se hace en los enlaces*/
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/* position: absolute; -->sirve para posicionar un elemento en cualquier lugar de la página */
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; /* Con esta propieda y el box-sizing ajusto un contenedor para que todos queden al tamaño */
+    box-sizing: border-box; /* Limite del espacio que será definido */
+    border: 2px solid #000; /* Un borde queda posicionado entre el padding y el margin*/
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #e30000;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Propiedad para cambiar el texto y se vea más grande cuando el usuario pase el mouse por el div*/
+.productos li:hover h2{
+    font-size: 40px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("imagenes/bg.jpg");
+    padding: 40px;
+}
+
+.copyright{
+    color: #fff;
+    font-size: 12px;
+    margin: 20px;
+}
+
+/* Página: Contacto */
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; /* Con esto el cursor cambia a una manita cuando se pasa por el botón */
+}
+
+.enviar:hover{
+    background: rgb(223, 97, 0);
+    transform: scale(1.1); /* Con esto el botón se agranda un poco cuando se pasa el mouse por encima */ /*rotate(10deg);  Con esto el botón rota 70 grados cuando se pasa el mouse por encima */
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555;
+    color: #fff;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/* 
+    td -> representa la celda de la tabla.
+    th -> representa el encabezado de la tabla.
+    thead -> representa el encabezado de la tabla.
+    tbody -> representa el cuerpo de la tabla.
+    tfoot -> representa el pie de la tabla.
+*/
+
+/* CSS para nuestro HOME o index */
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* 2em es el doble del tamaño de la fuente */
+    margin: 0 0 1em;
+    clear: left;
+    /*color: rgba(red, green, blue, alpha);  Con esto se puede cambiar el color de la fuente y colocando una opcacidad al final */
+}
+
+.principal p{
+    margin: 0 0  1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left; /* Con float se levanta el elemento para sobreponer el contenido */
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5; /* Con esto se separa el texto es como la sangría*/
+}
+
+.items::before{
+    content: "🟊";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 60%;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+
+}
+
+
