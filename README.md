@@ -4,7 +4,7 @@ Portfolio in which I use languages such as HTML, CSS, JavaScript, BootStrap, PHP
 ## Autor 🌺
 **Jessica Medina Carrillo**
 
-* [LinkedIn](https://www.www.linkedin.com/in/jessica-medina-carrillo)
+* [LinkedIn](https://www.linkedin.com/in/jessicamedinacarrillo/)
 * [Instagram](https://www.instagram.com/jessicamonzerrat)
 
 ## Portfolio 
