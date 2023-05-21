@@ -1,0 +1,118 @@
+<!-- Carrusel de imágenes con un texto abajo -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="manifest" href="./manifest.json">
+        <script defer src="./main.js"></script>
+        <script type="module" defer src="./Service_Worker.js"></script>
+        <script type="module" defer src="./regist_serviceWorker.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--<script defer src="sw.js"></script>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+        <meta name="theme-color" content="#db4938" />
+        <title>Mi PWA</title>
+
+        <!----METAS DE PWA-->
+        <meta name="theme-color" content="#2F3BA2">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="shortcut icon" type="image/png" href="./images/icon-512x512.png">
+        <link rel="apple-touch-icon" href="./images/icon-512x512.png">
+        <link rel="apple-touch-startup-image" href="./images/icon-512x512.png">
+
+        <link rel="apple-touch-icon" href="./images/icon-24x24.png" />
+        <link rel="apple-touch-icon" href="./images/icon-42x42.png" />
+        <link rel="apple-touch-icon" href="./images/icon-72x72.png" />
+        <link rel="apple-touch-icon" href="./images/icon-96x96.png" />
+        <link rel="apple-touch-icon" href="./images/icon-128x128.png" />
+        <link rel="apple-touch-icon" href="./images/icon-144x144.png" />
+        <link rel="apple-touch-icon" href="./images/icon-152x152.png" />
+        <link rel="apple-touch-icon" href="./images/icon-192x192.png" />
+        <link rel="apple-touch-icon" href="./images/icon-384x384.png" />
+        <link rel="apple-touch-icon" href="./images/icon-512x512.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+
+    </head>
+    
+    <body>
+        <script async defer>
+        var updateComponent = document.createElement("pwa-update");
+        document.body.appendChild(updateComponent);
+        </script>
+        <section id="container-slider">	
+            <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+                <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                <li><a itlist="itList_1" href="#"></a></li>
+                <li><a itlist="itList_2" href="#"></a></li>
+                <li><a itlist="itList_3" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+                <li style="background-image: url('images/01.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                    <div><h2>Donas</h2></div>
+                </div>
+                </li>
+                <li style="background-image: url('images/03.jpg'); ">
+                <div class="content_slider" >
+                    <div><h2>Sushi</h2></div></div>
+                </li>
+                <li style="background-image: url('images/04.jpg'); ">
+                <div class="content_slider" >
+                    <div><h2>Tacos</h2></div>
+                </div>
+                </li>
+                <li style="background-image: url('images/02.jpg'); ">
+                <div class="content_slider" >
+                    <div><h2>Burgers</h2></div>
+                </div>
+                </li>
+            </ul>
+        </section>
+        <div class="text">
+            <h2><center><b>Receta para hacer Donas</b></center><br></h2>
+            <p>
+                Hacer donas en casa es una tarea magnífica, porque a pesar de la creencia común, son muy
+                sencillas de hacer, qué mejor que sorprender a la familia y amigos con las donas más suaves
+                y deliciosas.
+            <br><br>
+            <div class="listas">
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li> 400 gramos de harina. </li>
+                    <li> 20 gramos de levadura de panadería. </li>
+                    <li> 30 gramos de mantequilla. </li>
+                    <li> 150 gramos de azúcar. </li>
+                    <li> Medio vaso de leche. </li>
+                    <li> 3 huevos. </li>
+                    <li> 1 pizca de sal. </li>
+                    <li> Aceite para freír. </li>
+                </ul><br>
+                    Los pasos necesarios son:
+                    <ol>
+                        <li>Poner la harina en un recipiente y en el centro hacer un hoyo, allí agregar la levadura con la
+                        leche y una pizca de azúcar.</li>
+                        <li>Integrar todo hasta que se haga una masa, añadir luego el resto de azúcar, la sal más los huevos 
+                        y la mantequilla, la cual debe estar a temperatura ambiente.</li>
+                        <li>Amasar bien  y hacer una bola con la masa, tapar y dejar que repose durante 1 hora en un lugar 
+                        cálido para que aumente su volumen.</li>
+                        <li>Pasado el tiempo de reposo, poner la masa sobre una superficie o mesa cubierta con harina, 
+                        extender con ayuda del rodillo hasta que quede con 8 milímetros de espesor, luego cortar con un 
+                        cortador circular y en medio de cada uno con uno más pequeño para hacer el orificio característico.</li>
+                        <li>Tapar las donas y poner en un lugar tibio para que reposen durante 2 horas y aumente su tamaño.</li>
+                        <li>Luego de las 2 horas, calentar bastante aceite en una sartén y allí freír las donas hasta que se 
+                        doren por ambos lados. Cuando estén listas escurrir y poner sobre papel absorbente para eliminar 
+                        el aceite excedente.</li>
+                        <li>Finalmente, dejar enfriar y espolvorear con azúcar pulverizada y canela o con un glaseado.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
