@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <!-- Metadatos -->
     <meta charset="utf-8">
     <meta name="author" content="Jessica Medina">
-    <meta name="description" content="Portafolio de desarrollo web de Jessica Medina Carrillo">
-    <meta name="keywords" content="HTML, CSS, JavaScript, React, PHP, Bootstrap">
+    <meta name="description" content="Web development and design portfolio by Jessica Monzerrat Medina Carrillo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, ReactJS, PHP, Bootstrap, Design, Web development, AdobeXD, Adobe Creative Suite, frontend developer, designer, hubspot, figma, canva, sketch, invision">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Titulo -->
-    <title>Jessica Medina | Desarrollo Web Front-End</title>
+    <title> Jessica Monzerrat | Developer and Designer</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <link rel="icon" type="image/x-icon" href="">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Iconos de Bootstrap -->
@@ -21,157 +21,192 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Iconos Font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
   </head>
+
   <body>
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light pb-0">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+          <img src="./media/images/logo-jess.png" width="60" alt="Logo de mi página web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#">
-            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
-          </a>
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+        <div class="d-flex navbar-text" id="navbarText">
+          <ul class="navbar-nav me-5 gap-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Me</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#about-me">Know me</a></li>
+                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+              </ul>
             </li>
           </ul>
+            <a href="#contact" class="btn-contact d-flex text-decoration-none text-center align-items-center justify-content-center"> Contact </a>
         </div>
       </div>
     </nav>
+    <!-- FIN NAVBAR -->
 
     <!-- Seccion Hero -->
-    <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Jess-2.jpg" alt="Foto de Jane Doe">
-        <h1>Hola, soy Jessica Medina Carrillo</h1>
-        <!--<h2>Desarrollo sitios web.</h2>-->
-
-        <!--Animación con JavaScript-->
-        <h2 class="text mb-4" id="typewriter" style="color: #56005e;"></h2>
+    <div id="about-me" class="hero-principal row align-items-center m-2 mb-2 mt-0">
+      <div class="col">
+        <h2 class="text-center texto-h2">Hi! I'm</h2>
+        <h1 class="text-center">Jessica Medina</h1>
+        <!-- typewriter -->
+        <p class="descripcion px-4 mt-4 mb-5 text-wrap"> I am a hard-working, demanding, responsible, communicative, creative, collaborative and committed person with my work. I seek to gain experience in the professional field by providing the company with my knowledge and willing to continue learning. I like to create attractive designs and websites that meet customer requirements and satisfaction. </p>
+        <a href="#about-me" class="saber-mas mx-4 p-3 text-decoration-none">
+          Learn more <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      <div class="col">
+        <img class="col image-me" src="./media/images/image-about-me0.svg" alt="Foto de Jessica Medina">
       </div>
-    </section>
+    </div>
 
-    <!-- Sobre mi -->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h2 class="seccion-titulo">Conóceme...</h2>
-        <p class="seccion-texto">Soy una persona dedicada, exigente, responsable, comunicativa, creativa, colaborativa y comprometida con mi trabajo. Busco obtener experiencia en el ámbito profesional brindando a la empresa mis conocimientos y dispuesta a seguir aprendiendo sobre el área, manteniendome en constante actualización. Me gusta crear diseños y sitios web que cumplan con los requisitos del cliente y sean visualmente atractivos para los usuarios. </p>
-      </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section class="experiencia seccion-clara">
-      <div class="container">
-        <div class="row">
-
-          <h2 class="seccion-titulo text-center">Experiencia Laboral</h2>
-
-          <!-- Desarrollo Web -->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Desarrollo Web</p>
-            <p> Soy apasionada de la programación, el diseño y la creación de experiencias digitales únicas y efectivas. En mi trayectoria, he adquirido experiencia en diversas tecnologías y herramientas que me permiten construir sitios web modernos, intuitivos y visualmente atractivos. Mis áreas de especialización son: </p>
-            <div class="badges-contenedor">
-              <span class="badge text" style="background: #000;">HTML</span>
-              <span class="badge text" style="background: #000;">CSS</span>
-              <span class="badge text" style="background: #000;">JavaScript</span>
-              <span class="badge text" style="background: #000;">Bootstrap</span>
-              <span class="badge text" style="background: #000;">HubSpot</span>
-              <span class="badge text" style="background: #000;">ReactJS</span>
-              <span class="badge text" style="background: #000;">PHP</span>
-              <span class="badge text" style="background: #000;">Python</span>
-              <span class="badge text" style="background: #000;">Responsive Web Design</span>
-              <span class="badge text" style="background: #000;">MySQL</span>
-              <span class="badge text" style="background: #000;">phpmyadmi</span>
-              <span class="badge text" style="background: #000;">Git y GitHub</span>
-              <span class="badge text" style="background: #000;">Linux</span>
-              <span class="badge text" style="background: #000;">Windows</span>
-            </div>
+    <!-- My Services -->
+    <section id="services" class="text-center mb-5">
+      <h2 class="fw-bold">My Amazing <span class="highlight">Services</span></h2>
+      <p class="mt-4 mb-4 mx-5 px-5">Complete digital solutions, from creative design to efficient development. Each service is designed to boost your online presence, providing attractive, intuitive and functional experiences that generate results.</p>
+      <!-- Inicio de cards -->
+      <div class="card-group gap-5 mx-5 mb-2">
+        <!-- Card 1 -->
+        <div class="card px-3 pt-5 pb-4 rounded">
+          <img src="./media/images/web-programming.svg" class="card-img align-self-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text"> I help transform your ideas into functional and modern websites, ready to make an impact.</p>
+            <!-- Ayudo a transformar tus ideas en sitios web funcionales y modernos, listos para impactar. -->
+            <!-- <a href="#" class="leer-mas text-decoration-none">Learn more</a> -->
           </div>
-
-          <!-- Estratega Web -->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Estratega Web</p>
-            <p> Como Estratega Web desempeñé un papel integral en el desarrollo digital. Realicé planificaciones y ejecución de estrategias de Inbound Marketing y SEO. Utilizando herramientas como Figma, realicé Wireframes, mapas de usuario y desempeñé funciones clave como UX Researcher y UX Writer, priorizando la experiencia del usuario. Llevé a cabo implementación de contenidos y el desarrollo de módulos utilizando HTML, CSS y JavaScript, todo ello integrado de manera eficiente a través de la plataforma HubSpot. </p>
-            <div class="badges-contenedor">
-              <span class="badge text" style="background: #000;">Wireframing</span>
-              <span class="badge text" style="background: #000;">Inbound Marketing</span>
-              <span class="badge text" style="background: #000;">HubSpot</span>
-              <span class="badge text" style="background: #000;">SEO</span>
-              <span class="badge text" style="background: #000;">Figma</span>
-              <span class="badge text" style="background: #000;">Implementación</span>
-              <span class="badge text" style="background: #000;">UX Researcher</span>
-              <span class="badge text" style="background: #000;">UX Writer</span>
-            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card pt-5 pb-4 rounded">
+          <img src="./media/images/strategist.svg" class="card-img align-self-center" alt="Icono ">
+          <div class="card-body">
+            <h5 class="card-title">Web Strategist</h5>
+            <p class="card-text">Optimize your online presence with smart strategies that drive results.</p>
+            <!-- Optimiza tu presencia online con estrategias inteligentes que impulsan resultados. -->
+            <!-- <a href="#" class="leer-mas text-decoration-none">Learn more</a> -->
           </div>
-
-          <!-- UX / UI y Diseño Gráfico-->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">UX / UI y Diseño Gráfico</p>
-            <p> 
-              En este rol multifacético, me destacé como una persona creativa de experiencias digitales, desempeñando funciones clave como UX/UI Designer, UX Researcher y UX Writer. Desde la gestación de la experiencia del usuario hasta la materialización de interfaces visualmente atractivas. A través de Figma, traduje ideas en wireframes y prototipos visuales, priorizando la usabilidad, accesibilidad y la estética.
-              
-              <br><br>              
-              Este puesto me brindó la oportunidad de integrar mis habilidades de diseño gráfico, UX/UI y investigación para ofrecer soluciones completas y efectivas en el ámbito digital, contribuyendo significativamente al éxito y la innovación de los proyectos de la empresa.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text" style="background: #000;">Figma</span>
-              <span class="badge text" style="background: #000;">Canva</span>
-              <span class="badge text" style="background: #000;">Sketch</span>
-              <span class="badge text" style="background: #000;">Diseño Gráfico</span>
-              <span class="badge text" style="background: #000;">Prototipado</span>
-              <span class="badge text" style="background: #000;">Wireframing</span>
-              <span class="badge text" style="background: #000;">Accesibilidad</span>
-              <span class="badge text" style="background: #000;">Usabilidad</span>
-              <span class="badge text" style="background: #000;">Arquitectura de la Información</span>
-            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card pt-5 rounded">
+          <img src="./media/images/designer.svg" class="card-img align-self-center" alt="Icono de una pluma color degradado entre azul y morado representado la labor de un diseñador">
+          <div class="card-body">
+            <h5 class="card-title">Designer</h5>
+            <p class="card-text">Your vision made into design: irresistible websites that leave a mark.</p>
+            <!-- Tu visión hecha diseño: webs irresistibles que dejan huella. -->
+            <!-- <a href="#" class="leer-mas text-decoration-none">Learn more</a> -->
           </div>
-          
-          <!-- Estudiante -->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Estudios</p>
-            <p> Estudié la carrera de Ingeniería en Computación Inteligente en la Universidad de Colima, donde desarrollé diferentes habilidades como programación avanzada, análisis de datos, diseño de algoritmos eficientes y resolución de problemas complejos. <br><br> Además, participé activamente en proyectos prácticos destacando mi capacidad para trabajar en equipo y enfrentar desafíos tecnológicos con creatividad y precisión. Mi compromiso con el aprendizaje continuo se refleja en mi participación activa en certificaciones y Bootcamps especializados que abarcan las últimas tendencias y desarrollos en mi campo. </p>
-            <div class="badges-contenedor">
-              <span class="badge text" style="background: #000;">Universidad de Colima</span>
-              <span class="badge text" style="background: #000;">Oracle Next Education</span>
-              <span class="badge text" style="background: #000;">Tecnolochicas PRO</span>
-              <span class="badge text" style="background: #000;">Udemy</span>
-              <span class="badge text" style="background: #000;">Platzi</span>
-              <span class="badge text" style="background: #000;">Santander Universidades</span>
-              <span class="badge text" style="background: #000;">Hubspot Academy</span>
-            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card pt-5 pb-4 rounded">
+          <img src="./media/images/ui-ux.svg" class="card-img align-self-center" alt="Icono representativo a un user experience y un user interface">
+          <div class="card-body">
+            <h5 class="card-title">UX | UI</h5>
+            <p class="card-text">Seamless and engaging digital experiences that connect with your users from the first click.</p>
+            <!-- Experiencias digitales fluidas y atractivas que conectan con tus usuarios desde el primer clic. -->
+            <!-- <a href="#" class="leer-mas text-decoration-none">Learn more</a> -->
           </div>
-
         </div>
       </div>
+      <!-- Fin de cards -->
+      <a href="./media/pdf/CV Jessica Medina Carrillo.pdf" download="CV_Jessica_Medina_Carrillo.pdf">
+        <button class="btn-cv mt-5">
+          Download my CV <i class="fa fa-arrow-down"></i>
+        </button>
+      </a>      
     </section>
 
+    <!-- Companies I have worked with -->
+    <section class="text-center pt-4 pb-5 mb-5">
+      <h2 class="mb-5">Companies I have worked with</h2>
+      <img class="hyperox" src="./media/images/hyperox.png" alt="Logotipo de la empresa Hyper-OX, que muestra la silueta de un toro estilizado en color púrpura con un contorno de nube detrás, acompañado del texto 'Hyper-OX">
+      <img class="instrumental mx-5" src="./media/images/instrumental.png" alt="Logotipo circular con fondo azul oscuro y formas geométricas en color verde brillante que forman la letra 'I' mayúscula estilizada y una 'n' minúscula.">
+      <img class="udc" src="./media/images/udc-logo.png" alt="Logotipo de la Universidad de Colima, con el escudo institucional a la izquierda y el texto 'Universidad de Colima' a la derecha, acompañado del lema 'Sí Soy UdeC' en la parte inferior.">
+    </section>
+
+    <!-- Carrusel projects -->
+    <div id="projects" class="container text-center carousel-projects mt-5 mb-5 px-5">
+      <h2 class="">Projects</h2>
+      
+      <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">
+        <p class="mt-4 mb-5">I invite you to discover some of the most outstanding projects I have worked on. Each of these projects represents an effort to combine functionality and aesthetics, with the aim of offering effective and attractive solutions.</p>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <img src="./media/images/Login 1.png" class="d-block w-100" alt="Proyecto 1">
+              </div>
+              <div class="col">
+                <img src="./media/images/Inicial.png" class="d-block w-100" alt="Proyecto 2">
+              </div>
+              <div class="col">
+                <img src="./media/images/1.png" class="d-block w-100" alt="Proyecto 3">
+              </div>
+              <div class="col">
+                <img src="./media/images/restaurante.png" class="d-block w-100" alt="Proyecto 4">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <img src="./media/images/Registro de Empresa.png" class="d-block w-100" alt="Proyecto 5">
+              </div>
+              <div class="col">
+                <img src="./media/images/Logueo.png" class="d-block w-100" alt="Proyecto 6">
+              </div>
+              <div class="col">
+                <img src="./media/images/Usuarios.png" class="d-block w-100" alt="Proyecto 7">
+              </div>
+              <div class="col">
+                <img src="./media/images/ToDoList.png" class="d-block w-100" alt="Proyecto 8">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+    
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <div class="carousel-indicators mt-5">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+    </div>
+    
     <!-- Proyectos -->
-    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <!-- <section id="projects" class="proyectos-recientes seccion-clara d-flex flex-column">
       <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
-      <!-- Galeria de Proyectos -->
+      -- Galeria de Proyectos --
       <div class="container text-center proyectos-contenedor">
         <div class="row">
-          <!-- Proyecto 1 -->
+          -- Proyecto 1 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/1.png" alt="Proyecto 1">
+              <img src="images/1.png" alt="Proyecto 1">
               <div class="overlay">
                 <p>Proyecto 1</p>
                 <div class="iconos-contenedor">
@@ -185,10 +220,11 @@
               </div>
             </div>
           </div>
-          <!-- Proyecto 2 -->
+
+          -- Proyecto 2 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/Login 2.png" alt="Proyecto 2">
+              <img src="images/Login 2.png" alt="Proyecto 2">
               <div class="overlay">
                 <p>Proyecto 2</p>
                 <div class="iconos-contenedor">
@@ -202,10 +238,11 @@
               </div>
             </div>
           </div>
-          <!-- Proyecto 3 -->
+
+          -- Proyecto 3 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/Inicio.png" alt="Proyecto 3">
+              <img src="images/Inicio.png" alt="Proyecto 3">
               <div class="overlay">
                 <p>Proyecto 3</p>
                 <div class="iconos-contenedor">
@@ -219,10 +256,11 @@
               </div>
             </div>
           </div>
-          <!-- Proyecto 4 -->
+
+          -- Proyecto 4 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/Registro.png" alt="Proyecto 4">
+              <img src="images/Registro.png" alt="Proyecto 4">
               <div class="overlay">
                 <p>Proyecto 4</p>
                 <div class="iconos-contenedor">
@@ -236,10 +274,11 @@
               </div>
             </div>
           </div>
-          <!-- Proyecto 5 -->
+
+          -- Proyecto 5 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/Usuarios.png" alt="Proyecto 5">
+              <img src="images/Usuarios.png" alt="Proyecto 5">
               <div class="overlay">
                 <p>Proyecto 5</p>
                 <div class="iconos-contenedor">
@@ -253,10 +292,11 @@
               </div>
             </div>
           </div>
-          <!-- Proyecto 6 -->
+
+          -- Proyecto 6 --
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/restaurante.png" alt="Proyecto 6">
+              <img src="images/restaurante.png" alt="Proyecto 6">
               <div class="overlay">
                 <p>Proyecto 6</p>
                 <div class="iconos-contenedor">
@@ -270,6 +310,7 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
       <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/" target="_blank" rel="noopener noreferrer">
@@ -278,57 +319,195 @@
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </a>
-    </section>
+    </section> -->
 
-    <!-- Contacto -->
-    <section id="contacto" class="contacto seccion-oscura">
+    <!-- Tools -->
+    <section class="text-center pt-4 pb-5 mb-5">
+      <h2 class="mb-4">Tools I have worked with</h2>
+
       <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
-          <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">
-              ¡Hablemos!
-            </div>
-            <div class="col-12 col-md-4 descripcion">
-              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="mailto:jssmedina09@gmail.com">
-                <button type="button">  
-                  Contacto
-                  <i class="bi bi-envelope-check-fill"></i>
-                </button>
-              </a>
-            </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/html.svg" width="40" alt="">
+            HTML
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/css.svg" width="32" alt="">
+            CSS
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/javascript.svg" width="40" alt="">
+            JavaScript
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/bootstrap.svg" width="40" alt="">
+            Bootstrap
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/react.svg" width="38" alt="">
+            React
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/figma.svg" width="40" alt="">
+            Figma
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/adobexd.svg" width="32" alt="">
+            Adobe XD
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/adobe-express.svg" width="40" alt="">
+            Adobe Express
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/canva.svg" width="40" alt="">
+            Canva
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/hubspot.svg" width="40" alt="">
+            Hubspot
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/python.svg" width="30" alt="">
+            Python
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/php.svg" width="50" alt="">
+            <!-- php -->
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/mysql.svg" width="50" alt="">
+            <!-- mysql -->
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/linux.svg" width="40" alt="">
+            Linux
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/windows.svg" width="40" alt="">
+            Windows
+          </div>
+        </div>
+
+        <div class="row justify-content-center ">
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/wordpress.svg" width="40" alt="">
+            Wordpress
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/word.svg" width="40" alt="">
+            Word
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/excel.svg" width="40" alt="">
+            Excel
+          </div>
+      
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/powerpoint.svg" width="40" alt="">
+            Power Point
+          </div>
+
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/clickup.svg" width="40" alt="">
+            ClickUp
           </div>
         </div>
       </div>
+      
     </section>
+
+
+    <!-- Contacto -->
+    <div id="contact" class="container mb-5 text-center">
+      <div class="row cta align-items-center">
+        <div class="col">
+          <h4 class="title-hablemos">¡Let's talk!</h4>
+        </div>
+        <div class="col">
+          <p class="texto-cta">Contact me if you want to transform your ideas into an attractive website</p>
+        </div>
+        <div class="col">
+          <a class="btn-email px-4 text-decoration-none" href="mailto:jssmedina09@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i> Contact
+          </a>
+        </div>
+      </div>
+    </div>
     
     <!-- Pie de pagina (footer) -->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="footer-texto text-center">Creemos un proyecto juntos.</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://github.com/jessica815/My_Portfolio/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/jessicamedinacarrillo" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/jessicamonzerrat/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="mailto:jssmedina09@gmail.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-envelope"></i>
-        </a>
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img class="logo-jess-footer" src="./media/images/logo-jess.png" width="80" alt="Logo de mi página web">
+            <div class="iconos-redes-sociales d-flex flex-wrap">
+              <a href="https://github.com/jessica815/My_Portfolio/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/jessicamedinacarrillo" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/jessicamonzerrat/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="mailto:jssmedina09@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
+        
+          <div class="col-3 services-footer ">
+            <h5 class="fw-bold">Services</h5>
+            <a href="http://">Web Development</a><br>
+            <a href="http://">Web Strategy</a><br>
+            <a href="http://">Web Design</a><br>
+            <a href="http://">Graphic Design</a><br>
+            <a href="http://">User Experience</a><br>
+            <a href="http://">User Interface</a><br>
+            <a href="http://">UX Writer</a><br>
+          </div>
+
+          <div class="col-3 aboutme-footer">
+            <h5 class="fw-bold">About Me</h5>
+            <a href="http://">Studies</a><br>
+            <a href="http://">Certifications</a><br>
+            <a href="http://">Skills</a>
+          </div>
+        </div>
       </div>
-      <div class="derechos-de-autor">Creado por Jessica Monzerrat Medina Carrillo (2024) &#169;</div>
+
+      <div class="line mt-5"></div>
+      <div class="derechos-de-autor">&#169; Creado por Jessica Monzerrat Medina Carrillo (2024)</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="main.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb4duZ9D4cX4h8JfD2Ih1U5jGe9U89U+uWsCk3XKUpkD77e6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-0dLZ1QFMO/m4F2gMOEFMuoR4jYwJNHLCz9BcI0D1OC9IzHViGLQR2Y8DlD4r8jBo" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
