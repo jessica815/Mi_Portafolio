@@ -26,17 +26,19 @@
   </head>
 
   <body>
-    <!-- Barra de navegacion -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-md navbar-light pb-0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./media/images/logo-jess.png" width="60" alt="Logo de mi página web">
         </a>
+        <!-- Botón hamburguesa para pantallas pequeñas -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="d-flex navbar-text" id="navbarText">
+        <!-- Menú colapsable para pantallas pequeñas -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
           <ul class="navbar-nav me-5 gap-4">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -45,18 +47,19 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Me</a>
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Me</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#about-me">Know me</a></li>
                 <li><a class="dropdown-item" href="#projects">Projects</a></li>
               </ul>
             </li>
           </ul>
-            <a href="#contact" class="btn-contact d-flex text-decoration-none text-center align-items-center justify-content-center"> Contact </a>
+          <a href="#contact" class="btn-contact d-flex text-decoration-none text-center align-items-center justify-content-center"> Contact </a>
         </div>
       </div>
     </nav>
     <!-- FIN NAVBAR -->
+
 
     <!-- Seccion Hero -->
     <div id="about-me" class="hero-principal row align-items-center m-2 mb-2 mt-0">
@@ -77,7 +80,8 @@
     <!-- My Services -->
     <section id="services" class="text-center mb-5">
       <h2 class="fw-bold">My Amazing <span class="highlight">Services</span></h2>
-      <p class="mt-4 mb-4 mx-5 px-5">Complete digital solutions, from creative design to efficient development. Each service is designed to boost your online presence, providing attractive, intuitive and functional experiences that generate results.</p>
+      <p class=" mt-4 mb-4 mx-5 text-services">Complete digital solutions, from creative design to efficient development. Each service is designed to boost your online presence, providing attractive, intuitive and functional experiences that generate results.</p>
+      
       <!-- Inicio de cards -->
       <div class="card-group gap-5 mx-5 mb-2">
         <!-- Card 1 -->
@@ -131,7 +135,7 @@
 
     <!-- Companies I have worked with -->
     <section class="text-center pt-4 pb-5 mb-5">
-      <h2 class="mb-5">Companies I have worked with</h2>
+      <h2 class="mb-5 fw-bold">Companies I have worked with</h2>
       <img class="hyperox" src="./media/images/hyperox.png" alt="Logotipo de la empresa Hyper-OX, que muestra la silueta de un toro estilizado en color púrpura con un contorno de nube detrás, acompañado del texto 'Hyper-OX">
       <img class="instrumental mx-5" src="./media/images/instrumental.png" alt="Logotipo circular con fondo azul oscuro y formas geométricas en color verde brillante que forman la letra 'I' mayúscula estilizada y una 'n' minúscula.">
       <img class="udc" src="./media/images/udc-logo.png" alt="Logotipo de la Universidad de Colima, con el escudo institucional a la izquierda y el texto 'Universidad de Colima' a la derecha, acompañado del lema 'Sí Soy UdeC' en la parte inferior.">
@@ -194,138 +198,13 @@
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-    </div>
-    
-    <!-- Proyectos -->
-    <!-- <section id="projects" class="proyectos-recientes seccion-clara d-flex flex-column">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
-      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
-      -- Galeria de Proyectos --
-      <div class="container text-center proyectos-contenedor">
-        <div class="row">
-          -- Proyecto 1 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/1.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 1</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/Book%20Exchange%20Project" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/Book%20Exchange%20Project" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          -- Proyecto 2 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/Login 2.png" alt="Proyecto 2">
-              <div class="overlay">
-                <p>Proyecto 2</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/ToDoList" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/ToDoList" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          -- Proyecto 3 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/Inicio.png" alt="Proyecto 3">
-              <div class="overlay">
-                <p>Proyecto 3</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Academic%20Training/HTML%20and%20CSS" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Academic%20Training/HTML%20and%20CSS" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          -- Proyecto 4 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/Registro.png" alt="Proyecto 4">
-              <div class="overlay">
-                <p>Proyecto 4</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/Slider" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Projects/Slider" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          -- Proyecto 5 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/Usuarios.png" alt="Proyecto 5">
-              <div class="overlay">
-                <p>Proyecto 5</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Academic%20Training/Google%20Interface" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Academic%20Training/Google%20Interface" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          -- Proyecto 6 --
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="images/restaurante.png" alt="Proyecto 6">
-              <div class="overlay">
-                <p>Proyecto 6</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Designs/Prototype%20Design" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/tree/main/Designs/Prototype%20Design" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <a href="https://github.com/jessicamedinacarrillo/My_Portfolio/" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-info">
-          Ver más proyectos
-          <i class="bi bi-arrow-right-circle-fill"></i>
-        </button>
-      </a>
-    </section> -->
+    </div>    
 
     <!-- Tools -->
     <section class="text-center pt-4 pb-5 mb-5">
       <h2 class="mb-4">Tools I have worked with</h2>
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-center mb-4">
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/html.svg" width="40" alt="">
@@ -346,14 +225,14 @@
             <img src="./media/iconos/bootstrap.svg" width="40" alt="">
             Bootstrap
           </div>
-      
+        </div>
+
+        <div class="row justify-content-center mb-4">
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/react.svg" width="38" alt="">
             React
           </div>
-        </div>
 
-        <div class="row justify-content-center mb-4">
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/figma.svg" width="40" alt="">
             Figma
@@ -368,7 +247,9 @@
             <img src="./media/iconos/adobe-express.svg" width="40" alt="">
             Adobe Express
           </div>
-      
+        </div>
+
+        <div class="row justify-content-center mb-4">
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/canva.svg" width="40" alt="">
             Canva
@@ -378,14 +259,19 @@
             <img src="./media/iconos/hubspot.svg" width="40" alt="">
             Hubspot
           </div>
-        </div>
 
-        <div class="row justify-content-center mb-4">
+          <div class="col-2 text-center m-2">
+            <img src="./media/iconos/wordpress.svg" width="40" alt="">
+            Wordpress
+          </div>
+
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/python.svg" width="30" alt="">
             Python
           </div>
-      
+        </div>
+
+        <div class="row justify-content-center mb-4">
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/php.svg" width="50" alt="">
             <!-- php -->
@@ -408,11 +294,6 @@
         </div>
 
         <div class="row justify-content-center ">
-          <div class="col-2 text-center m-2">
-            <img src="./media/iconos/wordpress.svg" width="40" alt="">
-            Wordpress
-          </div>
-      
           <div class="col-2 text-center m-2">
             <img src="./media/iconos/word.svg" width="40" alt="">
             Word
@@ -441,13 +322,13 @@
     <!-- Contacto -->
     <div id="contact" class="container mb-5 text-center">
       <div class="row cta align-items-center">
-        <div class="col">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
           <h4 class="title-hablemos">¡Let's talk!</h4>
         </div>
-        <div class="col">
-          <p class="texto-cta">Contact me if you want to transform your ideas into an attractive website</p>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <p class="texto-cta text-wrap">Contact me if you want to transform your ideas into an attractive website</p>
         </div>
-        <div class="col">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
           <a class="btn-email px-4 text-decoration-none" href="mailto:jssmedina09@gmail.com" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-envelope"></i> Contact
           </a>
@@ -460,7 +341,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <img class="logo-jess-footer" src="./media/images/logo-jess.png" width="80" alt="Logo de mi página web">
             <div class="iconos-redes-sociales d-flex flex-wrap">
               <a href="https://github.com/jessica815/My_Portfolio/" target="_blank" rel="noopener noreferrer">
@@ -478,7 +359,7 @@
             </div>
           </div>
         
-          <div class="col-3 services-footer ">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 services-footer ">
             <h5 class="fw-bold">Services</h5>
             <a href="http://">Web Development</a><br>
             <a href="http://">Web Strategy</a><br>
@@ -489,7 +370,7 @@
             <a href="http://">UX Writer</a><br>
           </div>
 
-          <div class="col-3 aboutme-footer">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 aboutme-footer">
             <h5 class="fw-bold">About Me</h5>
             <a href="http://">Studies</a><br>
             <a href="http://">Certifications</a><br>

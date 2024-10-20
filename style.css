@@ -1,18 +1,11 @@
 *{
   font-family: "Battambang-Regular", sans-serif;
-
 }
 
 /* Barra de navegacion */
 .navbar {
-  padding: 2rem;
-  /* background-color: #f5f6f7; */
+  padding: 2rem;  
 }
-
-/* .navbar-collapse {
-  align-items: center;
-  justify-content: space-between;  
-} */
 
 .btn-contact, .btn-cv{
   background: var(
@@ -29,14 +22,6 @@
   box-shadow: 2px 5px 30px 0px rgba(126, 48, 225, 0.6);
   color: #fff;
 }
-
-/* Estilos generales */
-/* section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
 
 /* Seccion Hero */
 .hero-principal h1 {
@@ -140,7 +125,7 @@
   width: 240px;
 }
 
-/* Compañias */
+/* Compañías */
 .instrumental, .udc{
   width: 125px;
   height: 120px;
@@ -168,44 +153,6 @@
 .proyectos-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
-}
-
-.overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.proyecto {
-  position: relative;
-}
-
-.proyecto:hover img {
-  opacity: 0.2;
-}
-
-.proyecto:hover .overlay {
-  opacity: 1;
-}
-
-.overlay .iconos-contenedor {
-  display: flex;
-}
-
-.overlay i {
-  color: black;
-  font-size: 60px;
-  margin: 10px;
 }
 /* Fin proyectos */
 
@@ -244,8 +191,6 @@
   height: 10px !important;
   border-radius: 50%;
 }
-
-
 
 /* Tools - Iconos */
 .fa-css3-alt{
@@ -319,7 +264,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 1px; */
   margin: 6px;
   border-radius: 50%;
   transition: all 0.2s ease-in;
@@ -356,7 +300,6 @@ footer {
 .services-footer a:hover,
 .aboutme-footer a:hover{
   color: #985df5;
-  /* #c19bff */
 }
 
 .line{
@@ -373,16 +316,6 @@ footer {
 }
 
 /* Adaptable (Responsivo) */
-@media screen and (max-width: 400px) {
-  .overlay p {
-    font-size: 18px;
-  }
-
-  .overlay i {
-    font-size: 40px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
@@ -400,8 +333,41 @@ footer {
   }
 }
 
-/* @media screen and (min-width: 700px) {
-  .hero-inferior-imagen {
-    max-width: 600px;
+@media screen and (max-width: 600px) {
+  img.col.image-me {
+    width: 330px;
+    margin-top: 40px;
+    margin-bottom: 0px;
   }
-} */
+
+  p.text-services{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hyperox, .instrumental, .udc{
+    width: auto;
+    height: auto;
+  }
+
+  .instrumental, .udc{
+    margin-inline: 20px;
+    margin-top: 40px;
+  }
+
+  /* Contacto */
+  .cta{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 350px;
+  }
+
+  footer div.row{
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .services-footer, .aboutme-footer{
+    margin-top: 30px;
+  }
+}
