@@ -3,10 +3,11 @@
 
 ### 📌 Table of Contents
 
-- [Description](###description)
-- [Features](###features)
-- [Technologies Used](###technologies-used)
-- [Author](###author)
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
+- [Portfolio](#portfolio)
 - [Contact](#contact)
 
 ---
