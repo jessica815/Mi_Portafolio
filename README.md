@@ -3,12 +3,12 @@
 
 ### 📌 Table of Contents
 
-- [Description](#description)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Author](#author)
-- [Portfolio](#portfolio)
-- [Contact](#contact)
+- [Description](#-description)
+- [Features](#-features)
+- [Technologies Used](#%EF%B8%8F-technologies-used)
+- [Author](#-author)
+- [Portfolio](#-portfolio)
+- [Contact](#-contact)
 
 ---
 
